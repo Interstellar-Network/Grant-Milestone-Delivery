@@ -26,7 +26,7 @@
 
 | Number | Deliverable | Link | Notes  |
 | -----: | ----------- | -----------|------------ |
-| 0b. | Documentation  |  |     |
+| 0b. | Documentation  |  | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can create and set-up a VHDL Master File, launch Garbled Circuit generation and get the resulted garbled circuit cid on IPFS and associated GC metadata i.e to check one-time code.     |
 | 0c. | Testing Guide |  |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker |  |   We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article |   |   We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
