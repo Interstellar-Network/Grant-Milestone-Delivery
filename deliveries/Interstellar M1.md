@@ -17,10 +17,24 @@
 > 
 > If there is anything particular about any of the deliverables we or a future reader should know, use the respective `Notes` column.
 
-| Number | Deliverable | Link | Notes |
-| ------------- | ------------- | ------------- |------------- |
-| 1. | ... |...| ...| 
-| 2.  | ... |...| ...| 
+
+### Milestone 1 — Implement GCF Substrate modules
+
+- **Estimated duration:** 1 month
+- **FTE:**  2.2
+- **Costs:** 9,400 USD
+
+| Number | Deliverable | Link | Notes  |
+| -----: | ----------- | -----------|------------ |
+| 0b. | Documentation  |  |     |
+| 0c. | Testing Guide |  |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
+| 0d. | Docker |  |   We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0e. | Article |   |   We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
+| 1. | GCF Substrate Interface | |  GCF external service interface to interact with the following Substrate modules and IPFS. |  
+| 2. | Substrate module: GCF CFG | |   We will create a Substrate GCF configuration pallet that will store GCF encrypted configuration information on chain (including cid of master circuit file, master key and other security parameter to ensure security of circuit production.  |  
+| 3. | Substrate GCF CFG CLI|  | A CLI to set-up  GCF configuration pallet. | 
+| 4. | Substrate module: OCW GCF |  | We will create an OCW pallet that will control and interact with GCF external service - Launch GC production and get resulted GC cid on IPFS. |  
+ 
 
 **Additional Information**
 > Any further comments on the milestone that you would like to share with us.
