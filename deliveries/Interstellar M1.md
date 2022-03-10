@@ -6,28 +6,26 @@
 
 **The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
 
->The company registration is still pending and we did not get yet our VAT ID
-we will have to reissue the same invoice with the VAT ID as soon as we recieve it. 
+>The company registration is still pending and we did not yet get our VAT ID.
+Invoice how mention a pending VAT ID is compliant with french law. However, we will have to reissue the same invoice with the VAT ID as soon as we receive it. 
 
 * **Application Document:** https://github.com/Interstellar-Network/Grants-Program/blob/Grant-application/applications/Interstellar-Network.md
 
 **Context** (optional)
-> Please provide a short paragraph or two connecting the deliverables in this milestone and describing their purpose.
 
-We had to refactor/and change the architecture of our pre-existing production grade Garbled Circuit Factory in order to integrate it with a substrate node.
-This part was a bit more difficult than expected. As a consequence, it took us more time than expected and we have to  adapt our deliverables accordingly.
+We had to refactor/and change the architecture of our pre-existing production grade Garbled Circuit Factory in order to integrate it with a substrate node. We take advantage  of this to split the architecture and separate the circuit production from garbled circuit production.
+ As a consequence, it took us more time than expected. Moreover, due to this architecture modification, we have adapted our deliverables accordingly:
+ - only one OCW worker with 2 differents APIs, one for circuit production and one for garbled circuit production
+ - GCF substrate interface M1.1 is replaced by GCF Circuit Interface Circuits and GCF substrate CFG M1.2 is replaced by GCF Interface GC in the deliverables.
+ - OCW GCF M1.4 will manage both production and configuration. M1.3 not needed anymore.
 
 **Deliverables**
-> Please provide a list of all deliverables of the milestone extracted from the initial application and a link to the deliverable itself. Ideally all links inside the below table should include a commit hash, which will be used for testing. If you don't provide a commit hash, we will work off the default branch of your repository. Thus, if you plan on continuing work after delivery, we suggest you create a separate branch for either the delivery or your continuing work. 
-> 
+
 > If there is anything particular about any of the deliverables we or a future reader should know, use the respective `Notes` column.
 
 
 ### Milestone 1 — Implement GCF Substrate modules
 
-- **Estimated duration:** 1 month
-- **FTE:**  2.2
-- **Costs:** 9,400 USD
 
 | Number | Deliverable | Link | Notes  |
 | -----: | ----------- | -----------|------------ |
@@ -35,10 +33,10 @@ This part was a bit more difficult than expected. As a consequence, it took us m
 | 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
 | 0d. | Docker | [docker file](https://book.interstellar.gg/M1.html) |   We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
 | 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
-| 1. | GCF Substrate Interface | https://github.com/Interstellar-Network/api_circuits  |  GCF external service interface to interact with the following Substrate modules and IPFS. |  
-| 2. | Substrate module: GCF CFG | |   We will create a Substrate GCF configuration pallet that will store GCF encrypted configuration information on chain (including cid of master circuit file, master key and other security parameter to ensure security of circuit production.  |  
-| 3. | Substrate GCF CFG CLI|  | A CLI to set-up  GCF configuration pallet. | 
-| 4. | Substrate module: OCW GCF |  | We will create an OCW pallet that will control and interact with GCF external service - Launch GC production and get resulted GC cid on IPFS. |  
+| 1. | GCF Substrate Interface **Circuit** | https://github.com/Interstellar-Network/api_circuits  |  GCF APIs to manage circuits production. |  
+| 2. |~~GCF CFG~~ GCF Substrate Interface **GC** | |   We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
+| 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed**. Configuration of OCW GCF will be managed later with substrate front end and/or governance module | 
+| 4. | Substrate module: OCW GCF |  | This OCW pallet now  manage  both the launch of Circuit/Ga5rbled Circuit production and the configuation features
  
 
 **Additional Information**
