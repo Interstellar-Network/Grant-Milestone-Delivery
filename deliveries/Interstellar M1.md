@@ -28,13 +28,13 @@ We had to refactor/and change the architecture of our pre-existing production gr
 | Number | Deliverable | Link | Notes  |
 | -----: | ----------- | -----------|------------ |
 | 0b. | Documentation  |  [code documentation]( https://book.interstellar.gg/M1.html) |   |
-| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) | Core functions due to the architecture are mainly covered with integration tests |
+| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
 | 0d. | Docker | [docker file](https://book.interstellar.gg/M1.html) |    |
-| 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
-| 1. | GCF Substrate Interface **Circuit** | https://github.com/Interstellar-Network/api_circuits  |  GCF APIs to manage circuits production. |  
-| 2. |~~GCF CFG~~ GCF Substrate Interface **GC** | |   We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
+| 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   will be published beginning of next week  |  
+| 1. | GCF Substrate Interface **Circuit** | https://github.com/Interstellar-Network/api_circuits/tree/w3f-milestone1 |  GCF APIs to manage circuits production. |  
+| 2. |~~GCF CFG~~ GCF Substrate Interface **GC** |https://github.com/Interstellar-Network/api_garble/tree/w3f-milestone1 | We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
 | 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed**. Configuration of OCW GCF will be managed later with substrate front end and/or governance module | 
-| 4. | Substrate module: OCW GCF |  | This OCW pallet now  manage  both the launch of Circuit & Garbled Circuit production and the configuation features
+| 4. | Substrate module: OCW GCF | https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar | This OCW demo pallet now  manage both the launch of Circuit & Garbled Circuit production and the configuation features
  
 
 **Additional Information**
