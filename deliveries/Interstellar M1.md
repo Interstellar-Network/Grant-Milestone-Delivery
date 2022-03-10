@@ -21,22 +21,20 @@ We had to refactor/and change the architecture of our pre-existing production gr
 
 **Deliverables**
 
-> If there is anything particular about any of the deliverables we or a future reader should know, use the respective `Notes` column.
-
 
 ### Milestone 1 — Implement GCF Substrate modules
 
 
 | Number | Deliverable | Link | Notes  |
 | -----: | ----------- | -----------|------------ |
-| 0b. | Documentation  |  [code documentation]( https://book.interstellar.gg/M1.html) | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can create and set-up a VHDL Master File, launch Garbled Circuit generation and get the resulted garbled circuit cid on IPFS and associated GC metadata i.e to check one-time code.     |
-| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) |  Core functions will be fully covered by unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests. |
-| 0d. | Docker | [docker file](https://book.interstellar.gg/M1.html) |   We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone. |
+| 0b. | Documentation  |  [code documentation]( https://book.interstellar.gg/M1.html) |   |
+| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) | Core functions due to the architecture are mainly covered with integration tests |
+| 0d. | Docker | [docker file](https://book.interstellar.gg/M1.html) |    |
 | 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   We will publish an **article**/workshop that explains what was done/achieved as part of the grant. (Content, language and medium should reflect your target audience described above.)  |  
 | 1. | GCF Substrate Interface **Circuit** | https://github.com/Interstellar-Network/api_circuits  |  GCF APIs to manage circuits production. |  
 | 2. |~~GCF CFG~~ GCF Substrate Interface **GC** | |   We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
 | 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed**. Configuration of OCW GCF will be managed later with substrate front end and/or governance module | 
-| 4. | Substrate module: OCW GCF |  | This OCW pallet now  manage  both the launch of Circuit/Ga5rbled Circuit production and the configuation features
+| 4. | Substrate module: OCW GCF |  | This OCW pallet now  manage  both the launch of Circuit & Garbled Circuit production and the configuation features
  
 
 **Additional Information**
