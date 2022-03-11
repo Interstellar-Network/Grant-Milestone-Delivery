@@ -13,7 +13,7 @@ Invoice with "VAT ID pending" is compliant with french law. However, we will hav
 
 We refactored and changed the architecture of our pre-existing production grade Garbled Circuit Factory in order to integrate it with a substrate node. We take advantage  of this to split the architecture and separate the circuit generation from garbled circuit production.
  As a consequence, it took us more time than expected. Moreover, due to this architecture modification, we have adapted our deliverables accordingly:
- - we have now 2 Off Chain Workers with their respectives APIs, one for configuration and logical circuit generation and one for garbled circuit production.
+ - we have now 2 Off Chain Workers with their respectives APIs, one for configuration and the logical circuit generation and one for thr garbled circuit production.
  - GCF substrate interface M1.1 will be managed with 2 gRPC servers with 2 apis that depend of circuit types.
  - M1.2 OCW CFG  handle configuration features,master files but also the generation of logical circuits.
  - M1.3 CLI is replaced by usage of substrate front end.
