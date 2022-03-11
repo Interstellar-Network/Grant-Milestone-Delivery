@@ -27,10 +27,11 @@ We refactored and changed the architecture of our pre-existing production grade 
 
 | Number | Deliverable | Link | Notes  |
 | -----: | ----------- | -----------|------------ |
-| 0b. | Documentation  |  [code documentation]( https://book.interstellar.gg/M1.html) |   |
-| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
-| 0d. | Docker | [docker api_garble](https://github.com/orgs/Interstellar-Network/packages/container/package/api_garble) `docker pull ghcr.io/interstellar-network/api_garble:milestone1` [docker api_circuit](https://github.com/orgs/Interstellar-Network/packages/container/package/api_circuits) `docker pull ghcr.io/interstellar-network/api_circuits:milestone1` | port 3000 for api_circuits and 3001 for api_garble (hardcoded in the OCWs) + the wright ipfs address      |
-| 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   will be published beginning of next week  |  
+| 0a. | Licence  |  APACHE 2.0 & GPL3 |  The few repositories with GPL3 are isolated with APIs | 
+| 0b. | Documentation  |  [code documentation](https://book.interstellar.gg/M1.html#garbled-circuit-factory-gcf-and-circuit-types-overview) |   |
+| 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html#testing-guide) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
+| 0d. | Docker | [docker api_garble](https://github.com/orgs/Interstellar-Network/packages/container/package/api_garble) `docker pull ghcr.io/interstellar-network/api_garble:milestone1` [docker api_circuit](https://github.com/orgs/Interstellar-Network/packages/container/package/api_circuits) `docker pull ghcr.io/interstellar-network/api_circuits:milestone1` |  [How to use:]( https://book.interstellar.gg/M1_demo_tutorial.html)     |
+| 0e. | Article | [article](https://book.interstellar.gg/M1.html#article)  |   will be published beginning of next week  |  
 | 1. | GCF Substrate Interface  |[1: api_circuit](https://github.com/Interstellar-Network/api_circuits/tree/main) [2: api_garble](https://github.com/Interstellar-Network/api_garble)  |  GCF APIs is splitted |https://github.com/Interstellar-Network/api_garble/tree/w3f-milestone1 | We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
 | 2. | Substrate module: OCW GFG | [pallet ocwExample](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar/pallets/example-offchain-worker)| This OCW demo pallet i.e `ocwExample` manages the Master files for GCF configuration and the generation of logical circuits (used for production of garbled circuit managed by M1.4) 
 | 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed anymore** Replaced by substrate front end and direct upload of config files/master files in IPFS | 
