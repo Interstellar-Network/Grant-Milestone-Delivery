@@ -4,7 +4,7 @@
 
 **The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
 
->The company registration is still pending and we did not yet received our VAT ID.
+>The company registration is pending and we still haven't received our VAT ID.
 Invoice with "VAT ID pending" is compliant with french law. However, we will have to reissue the same invoice with the VAT ID as soon as we receive it. 
 
 * **Application Document:** https://github.com/Interstellar-Network/Grants-Program/blob/Grant-application/applications/Interstellar-Network.md
