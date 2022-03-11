@@ -6,18 +6,20 @@
 
 **The [invoice form :pencil:](https://docs.google.com/forms/d/e/1FAIpQLSfmNYaoCgrxyhzgoKQ0ynQvnNRoTmgApz9NrMp-hd8mhIiO0A/viewform) has been filled out correctly for this milestone and the delivery is according to the official [milestone delivery guidelines](https://github.com/w3f/Grants-Program/blob/master/docs/milestone-deliverables-guidelines.md).**  
 
->The company registration is still pending and we did not yet get our VAT ID.
-Invoice how mention a pending VAT ID is compliant with french law. However, we will have to reissue the same invoice with the VAT ID as soon as we receive it. 
+>The company registration is still pending and we did not yet received our VAT ID.
+Invoice with "VAT ID pending" is compliant with french law. However, we will have to reissue the same invoice with the VAT ID as soon as we receive it. 
 
 * **Application Document:** https://github.com/Interstellar-Network/Grants-Program/blob/Grant-application/applications/Interstellar-Network.md
 
 **Context** (optional)
 
-We had to refactor/and change the architecture of our pre-existing production grade Garbled Circuit Factory in order to integrate it with a substrate node. We take advantage  of this to split the architecture and separate the circuit production from garbled circuit production.
+We had to refactor/and change the architecture of our pre-existing production grade Garbled Circuit Factory in order to integrate it with a substrate node. We take advantage  of this to split the architecture and separate the circuit generation from garbled circuit production.
  As a consequence, it took us more time than expected. Moreover, due to this architecture modification, we have adapted our deliverables accordingly:
- - only one OCW worker with 2 differents APIs, one for circuit production and one for garbled circuit production
- - GCF substrate interface M1.1 is replaced by GCF Circuit Interface Circuits and GCF substrate CFG M1.2 is replaced by GCF Interface GC in the deliverables.
- - OCW GCF M1.4 will manage both production and configuration. M1.3 not needed anymore.
+ - we have now 2 Off Chain Workers with their respectives differents APIs, one for configuration and logical circuit generation and one for garbled circuit production.
+ - GCF substrate interface M1.1 will be managed with 2 gRPC servers with 2 apis that depend of circuit types.
+ - M1.2 OCW CFG  handle configuration features,master files but also the generation of logical circuits.
+ - M1.3 CLI is replaced by usage of substrate front end.
+ - M1.4 OCW GCF manages Garbled Circuit production.
 
 **Deliverables**
 
@@ -31,10 +33,10 @@ We had to refactor/and change the architecture of our pre-existing production gr
 | 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M1.html) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
 | 0d. | Docker | [docker file](https://book.interstellar.gg/M1.html) |    |
 | 0e. | Article | [article](https://book.interstellar.gg/M1.html)  |   will be published beginning of next week  |  
-| 1. | GCF Substrate Interface **Circuit** | https://github.com/Interstellar-Network/api_circuits/tree/w3f-milestone1 |  GCF APIs to manage circuits production. |  
-| 2. |~~GCF CFG~~ GCF Substrate Interface **GC** |https://github.com/Interstellar-Network/api_garble/tree/w3f-milestone1 | We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
-| 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed**. Configuration of OCW GCF will be managed later with substrate front end and/or governance module | 
-| 4. | Substrate module: OCW GCF | https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar | This OCW demo pallet now  manage both the launch of Circuit & Garbled Circuit production and the configuation features
+| 1. | GCF Substrate Interface  |[1: api_circuit](https://github.com/Interstellar-Network/api_circuits/tree/main) [2: api_garble](https://github.com/Interstellar-Network/api_garble)  |  GCF APIs is splitted |https://github.com/Interstellar-Network/api_garble/tree/w3f-milestone1 | We replaced GCF CFG with another GCF APIs for garbled circuit production  |  
+| 2. | Substrate module: OCW GFG | [pallet ocwExample](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar/pallets/example-offchain-worker)| This OCW demo pallet i.e `ocwExample` manages the Master files for GCF configuration and the generation of logical circuits used for production of garbled circuit (managed by M1.4) 
+| 3. | ~~Substrate GCF CFG CLI~~ |  | **CLI not needed anymore** Replaced by substrate front end and direct upload of config files/master files in IPFS | 
+| 4. | Substrate module: OCW GCF | [pallet ocwDemo](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar/pallets/ocw)| This OCW demo pallet ie. `ocwDemo` manages the launch of Garbled Circuit production.
  
 
 **Additional Information**
