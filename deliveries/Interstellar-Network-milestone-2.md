@@ -25,7 +25,7 @@
 | 0a. | Licence  |  APACHE 2.0 & GPL3 | Only a part of the JustGarble repository is licenced with GPL3 and isolated with APIs | 
 | 0b. | Documentation  |  [code documentation](https://book.interstellar.gg/M2.html) |   |
 | 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M2.html#testing-guide) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
-| 0d. | Docker | [docker api_garble](https://github.com/orgs/Interstellar-Network/packages/container/package/api_garble) `docker pull ghcr.io/interstellar-network/api_garble:milestone1` [docker api_circuit](https://github.com/orgs/Interstellar-Network/packages/container/package/api_circuits) `docker pull ghcr.io/interstellar-network/api_circuits:milestone1` |  [How to use the dockers for demo:]( https://book.interstellar.gg/M1_demo_tutorial.html)     |
+| 0d. | Docker | [docker api_garble](https://github.com/orgs/Interstellar-Network/packages/container/package/api_garble) `docker pull ghcr.io/interstellar-network/api_garble:milestone1` [docker api_circuit](https://github.com/orgs/Interstellar-Network/packages/container/package/api_circuits) `docker pull ghcr.io/interstellar-network/api_circuits:milestone1` |  [How to use the dockers for demo:]( https://book.interstellar.gg/M2_demo_tutorial.html)     |
 | 0e. | Article | [article](https://book.interstellar.gg/M2.html#article)  |   Will be published soon  |  
 | 1. | Substrate Module: OCW GCF | | Manage the generation of display Garbled Circuit to perform Transaction Validation |  
 | 2. | Substrate module: pallet TTVP Transaction Validation Protocol | |  Pallet that will pilot generation of display Grable Circuit to manage TTVP | 
