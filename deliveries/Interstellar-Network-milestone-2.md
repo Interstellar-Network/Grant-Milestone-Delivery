@@ -11,8 +11,8 @@
 
 **Context** (optional)
 
-At this stage the TTVP pallet deliverable is still incomplete and inplemented in OCW for demo purpose.
-
+This milestone focuses on the production of Display Garbled Circuit that will be used by the Trusted Transaction Validation Protocol TTVP. We show how those circuits are produced and how the result of their evaluation/execution are validated by the TTVP pallet. At this stage the TTVP pallet deliverable is still incomplete and implemented in OCW for demo purpose.
+The next M3 milestone will focus on th execution of those circuits on the mobiles and on the TTVP friendly APIs that will hidden all the low-level complexity of circuit production and validation.
 
 
 **Deliverables**
