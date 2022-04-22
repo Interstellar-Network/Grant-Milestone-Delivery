@@ -11,6 +11,7 @@
 
 **Context** (optional)
 
+At this stage the TTVP pallet deliverable is still incomplete and inplemented in OCW for demo purpose.
 
 
 
@@ -27,8 +28,8 @@
 | 0c. | Testing Guide | [testing guide](https://book.interstellar.gg/M2.html#testing-guide) | Core functions due to the specificity of the architecture are mainly covered with integration tests |
 | 0d. | Docker | [docker api_garble](https://github.com/orgs/Interstellar-Network/packages/container/package/api_garble) `docker pull ghcr.io/interstellar-network/api_garble:milestone1` [docker api_circuit](https://github.com/orgs/Interstellar-Network/packages/container/package/api_circuits) `docker pull ghcr.io/interstellar-network/api_circuits:milestone1` |  [How to use the dockers for demo:]( https://book.interstellar.gg/M2_demo_tutorial.html)     |
 | 0e. | Article | [article](https://book.interstellar.gg/M2.html#article)  |   Will be published soon  |  
-| 1. | Substrate Module: OCW GCF | | Manage the generation of display Garbled Circuit to perform Transaction Validation |  
-| 2. | Substrate module: pallet TTVP Transaction Validation Protocol | |  Pallet that will pilot generation of display Grable Circuit to manage TTVP | 
+| 1. | Substrate Module: OCW GCF |   [OCW Circuits](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar-milestone2/pallets/ocw-circuits) and   [OCW Garble](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar-milestone2/pallets/ocw-garble)        | Manage the generation of Display Garbled Circuit to perform Transaction Validation |  
+| 2. | Substrate module: pallet TTVP Transaction Validation Protocol | [pallet TTVP](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/interstellar-milestone2/pallets/tx-validation)    |  Pallet that will pilot generation of Display Garbled Circuit to manage TTVP | 
 | 3. | CLI Display Garbled Circuit Evaluation |  | Client to Evaluate Display Garbled Circuit to get One Time code used by TTVP | 
 
  
