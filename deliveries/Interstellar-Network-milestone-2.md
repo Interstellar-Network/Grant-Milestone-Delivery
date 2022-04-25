@@ -12,7 +12,7 @@
 **Context** (optional)
 
 This milestone focuses on the on the fly's production of Display Garbled Circuits that will be used by the Trusted Transaction Validation Protocol TTVP. We demonstrate how those display circuits are produced and how the result of their evaluation/execution can be validated by the TTVP pallet. At this stage the TTVP pallet deliverable is still incomplete and implemented in OCW for demo purpose. To simplify the demo on this respect, wee provide only an had hoc/limited version (with low resolution) of the display garbled circuit evaluator that output only the transaction message that the one time code image to be validated. In the final version, the mobile evaluator will generate a series of visual cryptographic frames/per seconds that will be written directly in the mobile framebuffer.
-The next M3 milestone will focus on the execution of those circuits on the mobiles with a final version of the evaluator and on the TTVP friendly APIs that will hidden all the low-level complexity of circuit configuration and production and validation.
+The next M3 milestone will focus on the execution of those circuits on the mobiles with a final version of the evaluator and on the TTVP friendly APIs that will hidden all the low-level complexity of circuit configuration, production and validation.
 
 
 **Deliverables**
