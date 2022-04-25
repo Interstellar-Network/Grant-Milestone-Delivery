@@ -36,6 +36,6 @@ The next M3 milestone will focus on the execution of those circuits on the mobil
 | 0e. | Article | [article](https://book.interstellar.gg/M2.html#article)  |   links in Mx Interstellar Book  |  
 | 1. | Substrate Module: OCWs GCF pallets |   [OCW Circuits](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/master/pallets/ocw-circuits) and  [OCW Garble](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/master/pallets/ocw-garble) pallets       | updated versions to manage the generation of Display Garbled Circuit to perform Transaction Validation |  
 | 2. | Substrate module: TTVP Transaction Validation Protocol pallet| [TTVP (intermediary OCW version `txValidation` pallet for the demo)](https://github.com/Interstellar-Network/substrate-offchain-worker-demo/tree/master/pallets/tx-validation)    | limited TTVP pallet version to demomstrate the validation of garbled circuit metadata i.e. text message and one time code| 
-| 3. | CLI Display Garbled Circuit Evaluation | `docher pull ghcr.io/interstellar-network/lib_garble:milestone2` | Client that Evaluate Display Garbled Circuit to display transaction message and one time code used by TTVP | 
+| 3. | CLI Display Garbled Circuit Evaluation | `docher pull ghcr.io/interstellar-network/lib_garble:milestone2` | Client that Evaluate Display Garbled Circuit to display transaction message and one time code used by TTVP  [Launch this docker in demo](https://book.interstellar.gg/M2_demo_tutorial.html#32-create-the-garbled-circuits-in-the-above-folder)  | 
 
  
